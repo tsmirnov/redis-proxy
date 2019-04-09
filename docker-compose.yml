@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  proxy:
+    build: ./proxy
+    depends_on:
+      - redis
+    environment:
+      - REDIS_URL
+      - CACHE_TTL
+      - CAPACITY
+  redis:
+    image: redis:5-alpine
+  test:
+    build: ./test
+    depends_on:
+      - proxy
+      - redis
+    environment:
+      - REDIS_URL
+      - PROXY_URL
+      - PROXY_RESP_URL
+      - CACHE_TTL
+      - CAPACITY
+      - PROXY_PROTOCOL

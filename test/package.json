@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "System tests for redis proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -r esm --exit"
+  },
+  "author": "Timofey Smirnov",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.4",
+    "esm": "^3.2.22",
+    "mocha": "^6.0.2",
+    "node-fetch": "^2.3.0",
+    "redis": "^2.8.0",
+    "uuid": "^3.3.2"
+  }
+}
