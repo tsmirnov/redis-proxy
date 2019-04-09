@@ -42,6 +42,8 @@ Configuration can be changed via environmental variables:
 
 When you run `make start` default values are taken from `.env` file and are passed as environmental variables to a container.
 
+By default tests will be run for HTTP server. In order to run them for RESP, you need to set `PROXY_PROTOCOL=RESP` in `.env`
+
 ## How long you spent on each part of the project
 
 - devops - 2h

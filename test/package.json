@@ -6,6 +6,10 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha -r esm --exit"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsmirnov/redis-proxy.git"
+  },
   "author": "Timofey Smirnov",
   "license": "ISC",
   "dependencies": {
